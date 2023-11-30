@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YantudGank</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo"><span>i'm</span>Yantud</h2>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span data-feather="menu"></span>
+        </div>
+        <nav class="navigation" id="mainNav">
+                <a href= "#">Home</a>
+        		<a href= "about.html">About</a>
+        		<a href= "portofolio.html">Portfolio</a>
+        </nav>
+        <a href="https://api.whatsapp.com/send?phone=082332732295" class="btn-talk" target="_blank">
+            <span data-feather="message-square"></span> Let's Talk
+        </a>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <div class="gambar-container">
+                <img src="img/akuuu.png" alt="Deskripsi Gambar" class="gambar">
+            </div>
+            <h2>Hai Saya<span>Alviansyah</span></h2>
+            <h4>Petani Muda</h4>
+            <p>Saya adalah seorang petani yang memiliki dedikasi tinggi terhadap pertanian.
+                saya suka dalam bidang ini dan kecintaan mendalam terhadap tanah dan tanaman serta explorasi tumbuhan.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Yantud" target="_blank" data-feather="github"></a>
+                <a href="https://facebook.com/yantud" target="_blank" data-feather="facebook"></a>
+                <a href="https://instagram.com/akalan___" target="_blank" data-feather="instagram"></a>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+
+        function toggleMenu() {
+            var nav = document.getElementById("mainNav");
+            nav.classList.toggle("show");
+        }
+
+            // Make social icons clickable
+    document.querySelectorAll('.social-icons a').forEach(icon => {
+        icon.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            window.open(this.href, '_blank'); // Open the link in a new tab
+        });
+    });
+    </script>
+</body>
+
+</html>
